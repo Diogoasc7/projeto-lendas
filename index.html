@@ -9,10 +9,10 @@
 </head>
 <body class="bg-dark">
     <header id="header" class="fixed-top">
-        <div class="navbar navbar-expand-lg">
+        <div class="navbar navbar-expand-lg bg-transparent" id="navbar">
             <div class="container">
                 <div class="logo">
-                    <img src="imagens/icone.png" width="170px" alt="logo do site escrito Legends Never Die">
+                    <img src="imagens/icone.png" class="img-fluid" width="170px" alt="logo do site escrito Legends Never Die">
                 </div>
                 <button data-bs-theme="dark" type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
@@ -20,19 +20,20 @@
                 <nav class="collapse navbar-collapse justify-content-end text-center" id="menu">
                     <ul class="nav navbar-nav nav-pills d-flex">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#carousel-legend">Início</a>
+                            <a class="nav-link active text-light" href="#carousel-legend">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#carousel-legend">Sobre</a>
+                            <a class="nav-link text-light" href="#carousel-legend">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#carousel-legend">Lendas</a>
+                            <a class="nav-link text-light" href="#carousel-legend">Lendas</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+
     <div data-bs-spy="scroll" data-bs-target="header">
         <div id="carousel-legend" class="carousel carousel-dark carousel-fade slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -72,7 +73,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="imagens/carrousel_futebol.jpg" class="d-block w-100" alt="Imagem de lendas do futebol">
+                    <img src="imagens/icon_futebol.png" class="d-block w-100" alt="Imagem de lendas do futebol">
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel-legend" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -84,8 +85,9 @@
                 </button>
             </div>
         </div>
-        <div id="resumo" class="abas px4">
-            <h1 class="text-white text-center pt-5 pb-2">Explicando um pouco do jogo:</h1>
+    </div>
+        <div id="resumo" class="abas px-4">
+            <h1 class="text-white text-center pt-5 pb-2">Um pouco do jogo:</h1>
             <div class="container-sobre d-flex flex-column align-items-center">
                 <div class="nav nav-pills" role="tablist">
                     <button type="button" data-bs-toggle="tab" data-bs-target="#nba" class="nav-link active" aria-selected="true" role="tab">NBA</button>
@@ -94,30 +96,31 @@
                 </div>
                 <div class="tab-content text-white p-5">
                     <div id="nba" class="tab-pane active container-grid p-4" role="tabpanel">
-                        <div class="space-row row-gap-5 d-flex justify-content-center">
-                            <div class="align col-sm-12 col-md-6 col-lg-4">
+                        <div class="row d-flex justify-content-center row-gap-5">
+                            <div class="col-sm-12 col-md-6 col-lg-4">
                                 <div class="descricao">
                                     <h2>NBA</h2>
                                     <p>O basquete foi inventado em 1891 por James Naismith, nos EUA, para manter os alunos ativos durante o inverno. Ele usava cestas de pêssego como metas. O esporte rapidamente evoluiu para um jogo dinâmico, jogado em quadras fechadas com aros e redes. Nos EUA, a NBA (National Basketball Association) tornou-se a liga mais famosa e competitiva, elevando o esporte ao nível global. Jogadores como Michael Jordan, LeBron James e Kobe Bryant se tornaram lendas, inspirando fãs ao redor do mundo.
-                                    O basquete é conhecido por seu ritmo rápido, com enterradas e arremessos de três pontos. O esporte exige tanto habilidade física quanto trabalho em equipe. Atualmente, o basquete é popular em muitos países, e torneios como as Olimpíadas e o Campeonato Mundial são destaque.
-                                    <p>
-                                        <strong>Regras Básicas:</strong> Dois times de cinco jogadores competem para arremessar a bola no aro adversário. As cestas podem valer 1, 2 ou 3 pontos. O jogo dura 48 minutos, dividido em quatro quartos de 12 minutos.
-                                    </p>
-                                    <p>
-                                        <strong>Curiosidade:</strong> O basquete feminino é praticado desde cedo e é globalmente popular. Michael Jordan é considerado o maior jogador da história do basquete.
-                                    </p></p>
+                                        O basquete é conhecido por seu ritmo rápido, com enterradas e arremessos de três pontos. O esporte exige tanto habilidade física quanto trabalho em equipe. Atualmente, o basquete é popular em muitos países, e torneios como as Olimpíadas e o Campeonato Mundial são destaque.
+                                        </p>
+                                        <p>
+                                            <strong>Regras Básicas:</strong> Dois times de cinco jogadores competem para arremessar a bola no aro adversário. As cestas podem valer 1, 2 ou 3 pontos. O jogo dura 48 minutos, dividido em quatro quartos de 12 minutos.
+                                        </p>
+                                        <p>
+                                            <strong>Curiosidade:</strong> O basquete feminino é praticado desde cedo e é globalmente popular. Michael Jordan é considerado o maior jogador da história do basquete.
+                                        </p>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-5 d-flex justify-content-center">
                                 <div class="wallpaper">
-                                    <img src="imagens/nba_sobre.png" alt="imagem jogador nba">
+                                    <img src="imagens/nba_sobre.png" alt="imagem jogador nba" class="img-fluid rounded">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div id="nfl" class="tab-pane container-grid p-4" role="tabpanel">
-                        <div class="space-row row-gap-5 d-flex justify-content-center">
-                            <div class="align col-sm-12 col-md-6 col-lg-4">
+                        <div class="row d-flex justify-content-center row-gap-5">
+                            <div class="col-sm-12 col-md-6 col-lg-4">
                                 <div class="descricao">
                                     <h2>NFL</h2>
                                     <p>
@@ -130,33 +133,35 @@
                                             <strong>Curiosidade:</strong> O Super Bowl é o evento esportivo mais assistido nos EUA, conhecido pelos shows do intervalo e pelos comerciais icônicos. O esporte é famoso por sua complexidade estratégica e jogadas ensaiadas.
                                         </p>
                                     </p>
+
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-5 d-flex justify-content-center">
                                 <div class="wallpaper">
-                                    <img src="imagens/nfl_sobre.png" alt="imagem jogadro nfl">
+                                    <img src="imagens/nfl_sobre.png" alt="imagem jogador nfl" class="img-fluid rounded">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div id="futebol" class="tab-pane container-grid p-4" role="tabpanel">
-                        <div class="space-row row-gap-5 d-flex justify-content-center">
-                            <div class="align col-sm-12 col-md-6 col-lg-4">
+                        <div class="row d-flex justify-content-center row-gap-5">
+                            <div class="col-sm-12 col-md-6 col-lg-4">
                                 <div class="descricao">
                                     <h2>FUTEBOL</h2>
                                     <p>O futebol, como o conhecemos hoje, tem suas origens na Inglaterra no século XIX. Em 1863, a Football Association foi fundada, estabelecendo as primeiras regras do esporte, que formaram a base para o futebol moderno. O esporte rapidamente se espalhou pelo mundo, tornando-se uma paixão global. A simplicidade do jogo em que o objetivo é marcar gols usando apenas os pés tornou-o acessível e popular em praticamente todos os países. Hoje, o futebol é o esporte mais praticado e assistido do mundo, com ligas e campeonatos em quase todos os continentes. Competições como a Liga dos Campeões da UEFA e a Copa do Mundo da FIFA atraem milhões de espectadores e geram grandes receitas.
                                     Culturalmente, o futebol é gigantesco. Ícones do esporte, como Pelé, Diego Maradona, Lionel Messi e Cristiano Ronaldo, se tornaram lendas, influenciando fãs e jogadores. O esporte promove não só a competição, mas também o trabalho em equipe, a disciplina e a união entre culturas. Além disso, o futebol tem sido usado como plataforma para debater questões sociais e políticas, como racismo e desigualdade.
-                                    <p>
-                                        <strong>Regras Básicas:</strong> Cada time tem 11 jogadores, e o objetivo é marcar gols. O jogo tem 90 minutos, divididos em dois tempos de 45 minutos. Apenas o goleiro pode usar as mãos, e infrações como faltas e pênaltis são comuns.
                                     </p>
-                                    <p>
-                                        <strong>Curiosidade:</strong> O primeiro jogo internacional de futebol foi entre Inglaterra e Escócia em 1872. A Copa do Mundo da FIFA é o maior evento do esporte.
-                                    </p></p>
+                                        <p>
+                                            <strong>Regras Básicas:</strong> Cada time tem 11 jogadores, e o objetivo é marcar gols. O jogo tem 90 minutos, divididos em dois tempos de 45 minutos. Apenas o goleiro pode usar as mãos, e infrações como faltas e pênaltis são comuns.
+                                        </p>
+                                        <p>
+                                            <strong>Curiosidade:</strong> O primeiro jogo internacional de futebol foi entre Inglaterra e Escócia em 1872. A Copa do Mundo da FIFA é o maior evento do esporte.
+                                        </p>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-5 d-flex justify-content-center">
                                 <div class="wallpaper">
-                                    <img src="imagens/futebol_sobre.png" alt="imagem futebol">
+                                    <img src="imagens/futebol_sobre.png" alt="imagem futebol" class="img-fluid rounded">
                                 </div>
                             </div>
                         </div>
@@ -164,6 +169,7 @@
                 </div>
             </div>
         </div>
+        
         <div id="lendas" class="abas px-4">
             <h1 class="text-white text-center pt-5 pb-2">Legends</h1>
             <div class="container-lendas d-flex flex-column align-items-center">
@@ -440,6 +446,8 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
