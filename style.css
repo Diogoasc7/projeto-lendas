@@ -11,15 +11,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Cor e opacidade do overlay */
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 h2, h5 {
     color: white;
-}
-
-#header {
-    transition: background-color 0.5s ease;
 }
 
 .navbar {
@@ -53,4 +49,20 @@ h2, h5 {
 .logo img {
     max-width: 100%;
     height: auto;
+}
+
+#header {
+    transition: background-color 0.3s ease;
+    height: 160px; 
+    padding: 0 15px; 
+    border-radius: 4px; 
+}
+
+.scrolled-header {
+    background-color: rgba(0, 0, 0, 0.849); 
+    border-radius: 4px; 
+}
+
+#navbar .container {
+    padding: 0;
 }
